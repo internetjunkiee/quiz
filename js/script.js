@@ -13,14 +13,7 @@ $(document).ready(function() {
         
         
         
-        if(q2Input == "Google"){
-            userScore + 9
-        }else{
-            userScore +8
-        }
         
-    });
-
 function question1Score(q1Input){
         if (q1Input == "coding" || q1Input == "reading") {
              return 9;
@@ -30,18 +23,20 @@ function question1Score(q1Input){
 }
 
 function question2Score(q2Input){
-        if (q1Input == "coding" || q2Input == "reading") {
+        if (q2Input == "Google") {
              return 9;
          }else{
-        return -2;
+        return 8;
         }
 }
 
 function question3Score(q3Input){
-        if (q1Input == "coding" || q3Input == "reading") {
+        if (q3Input == "Not so Creative") {
              return 9;
-         }else{
-        return -2;
+         }else if(q3Input == "Creative" || q3Input =="Very Creative"){
+            return 5;
+        }else{
+            return 0;
         }
 }
         
